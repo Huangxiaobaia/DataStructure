@@ -240,13 +240,18 @@ Type Queue<Type>::DeQueue()
 	assert(!isEmpty());
 	front = (front + 1) % m;
 	tag = 0;
+<<<<<<< HEAD
 	return Q[front];
+=======
+	return Q[front]
+>>>>>>> d2d7098054d335ad0cd7d1c3271c1b89680f6991
 }
 
 template<class Type>
 Type Queue<Type>::GetFront()
 {
 	assert(!isEmpty());
+<<<<<<< HEAD
 	return Q[(front + 1) % m];
 }
 
@@ -311,6 +316,11 @@ int Ackerman(int m, int n)
 #include "RecurveList.h"
 
 
+=======
+	return Q[(front+1)%m]
+}
+
+>>>>>>> d2d7098054d335ad0cd7d1c3271c1b89680f6991
 int main()
 {
 	//3.1
@@ -326,13 +336,18 @@ int main()
 	//expr();
 
 	//3.4
+<<<<<<< HEAD
 	/*char c[] = "IOIIOIOO";
+=======
+	char c[] = "IOIIOIOO";
+>>>>>>> d2d7098054d335ad0cd7d1c3271c1b89680f6991
 	int x=Judge(c);
 	if (x == 1)
 	{
 		cout << "序列合法" << endl;
 	}
 	else
+<<<<<<< HEAD
 		cout << "序列非法" << endl;*/
 
 	//3.5
@@ -345,6 +360,9 @@ int main()
 	cout << "\nThe Max is: " << test.GetMax();
 	cout << "\nThe Num is: " << test.GetNum();
 	cout << "\nThe Ave is: " << test.GetAvg(n) << "\n";
+=======
+		cout << "序列非法" << endl;
+>>>>>>> d2d7098054d335ad0cd7d1c3271c1b89680f6991
 
 	return 0;
 }
